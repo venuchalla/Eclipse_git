@@ -17,8 +17,8 @@ PreparedStatement stmt=con.prepareStatement("insert into company values(?,?,?,?,
 stmt.setInt(1,101);//1 specifies the first parameter in the query  
 stmt.setString(2,"Ratan"); 
 stmt.setInt(3,43);
-stmt.setString("hyderabad");
-stmt.setBigdecimal(20000.00d);
+stmt.setString(4,"hyderabad");
+stmt.setInt(5,20000);
   
 int i=stmt.executeUpdate();  
 System.out.println(i+" records inserted");  
@@ -31,4 +31,4 @@ con.close();
 
 	}
 
-}
+
